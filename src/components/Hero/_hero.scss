@@ -1,0 +1,39 @@
+$backgroundImageUrl: 'https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fmoneybizlife.com%2Fwp-content%2Fuploads%2F2017%2F09%2Fbusiness_enquiry_bg.jpg&f=1';
+
+.hero {
+  @include background(
+    rgba($color: #000000, $alpha: .3),
+    $backgroundImageUrl
+  );
+  height: 100vh;
+  display: flex;
+  align-items: center;
+
+}
+
+.hero__description-wrap {
+  @include large {
+    width: 750px;
+  }
+}
+
+.hero__title {
+  margin: 0 0 20px 0;
+  font-weight: normal;
+}
+
+.hero__description {
+  line-height: 1.6;
+  color: #fff;
+  margin: 0 0 40px 0;
+
+  @include font-size(14);
+  @include medium {
+    @include font-size(20);
+  }
+}
+
+.hero__btn {
+  margin-left: 0;
+  margin-right: 0;
+}

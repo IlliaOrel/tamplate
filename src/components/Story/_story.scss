@@ -1,0 +1,27 @@
+$storyBackground: 'https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fmoneybizlife.com%2Fwp-content%2Fuploads%2F2017%2F09%2Fbusiness_enquiry_bg.jpg&f=1';
+
+.story {
+  @include background(
+    rgba($color: #020202, $alpha: .3),
+    $storyBackground
+  );
+  color: #fff;
+}
+
+.story__button {
+  margin-top: 30px;
+  margin-left: 0;
+}
+
+.container--story {
+  @include large {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+.story__description-wrap {
+  @include large {
+    width: 50%;
+  }
+}

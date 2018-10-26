@@ -1,0 +1,57 @@
+
+.features__item {
+  border: 1px solid #f1f1f1;
+  padding: 50px 15px 20px 15px;
+  text-align: center;
+  position: relative;
+
+  &:not(:last-child) {
+    margin-bottom: 60px;
+
+    @include medium {
+      margin-bottom: 0;
+    }
+  }
+
+  &:last-child {
+    @include medium {
+      margin-bottom: 0;
+    }
+  }
+
+  @include medium {
+    width: calc(50% - 30px);
+    margin: 60px 15px;
+  }
+
+  @include large {
+    width: 329px;
+  }
+}
+
+.features__title {
+  @include font-size(18);
+  text-transform: uppercase;
+  color: $primary-text;
+  margin: 0 0 20px 0;
+}
+
+.features__description {
+  color: $secondary-text;
+  line-height: 1.5;
+}
+
+.features__icon {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $primary;
+  color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, -50%);
+}

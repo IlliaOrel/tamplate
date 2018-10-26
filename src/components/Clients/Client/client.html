@@ -1,0 +1,13 @@
+{% macro card(name, position, content, image) %}
+  <li class="client__item">
+    <p class="client__description">{{ content }}</p>
+
+    <figure class="client__footer">
+      <figcaption class="client__footer-description">
+        <span class="client__name">{{ name }}</span>
+        <span class="client__position">{{ position }}</span>
+      </figcaption>
+      <img src="{{ image }}" alt="{{ content }}" class="client__avatar">
+    </figure>
+  </li>
+{% endmacro %}

@@ -1,0 +1,22 @@
+{%
+    set clients = [
+      { name: 'John Doe', position: 'Frontend Dev.', content: 'Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.', image: 'https://proxy.duckduckgo.com/iur/?f=1&image_host=http%3A%2F%2Fthumbs.dreamstime.com%2Fz%2Fbusiness-man-angry-face-isolated-55935508.jpg&u=https://thumbs.dreamstime.com/z/business-man-angry-face-isolated-55935508.jpg' },
+      { name: 'John Doe', position: 'Frontend Dev.', content: 'lorem ipsum dolor sit amet', image: 'https://proxy.duckduckgo.com/iur/?f=1&image_host=http%3A%2F%2Fthumbs.dreamstime.com%2Fz%2Fbusiness-man-angry-face-isolated-55935508.jpg&u=https://thumbs.dreamstime.com/z/business-man-angry-face-isolated-55935508.jpg' },
+      { name: 'John Doe', position: 'Frontend Dev.', content: 'lorem ipsum dolor sit amet', image: 'https://proxy.duckduckgo.com/iur/?f=1&image_host=http%3A%2F%2Fthumbs.dreamstime.com%2Fz%2Fbusiness-man-angry-face-isolated-55935508.jpg&u=https://thumbs.dreamstime.com/z/business-man-angry-face-isolated-55935508.jpg' },
+      { name: 'John Doe', position: 'Frontend Dev.', content: 'lorem ipsum dolor sit amet', image: 'https://proxy.duckduckgo.com/iur/?f=1&image_host=http%3A%2F%2Fthumbs.dreamstime.com%2Fz%2Fbusiness-man-angry-face-isolated-55935508.jpg&u=https://thumbs.dreamstime.com/z/business-man-angry-face-isolated-55935508.jpg' }
+    ]
+  %}
+  
+  {% import 'components/Clients/Client/client.html' as client %}
+  
+  <section class="section clients">
+    <h2 class="clients__main-title">Our Clients Says</h2>
+  
+    <div class="container">
+      <ul class="clients__list">
+        {% for item in clients %}
+          {{ client.card(item.name, item.position, item.content, item.image) }}
+        {% endfor %}
+      </ul>
+    </div>
+  </section>

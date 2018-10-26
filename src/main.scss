@@ -1,0 +1,20 @@
+@import "normalize";
+@import url('https://fonts.googleapis.com/css?family=Cabin|Lato:300,400,700|Montserrat');
+@import url('https://use.fontawesome.com/releases/v5.4.1/css/all.css');
+// @import "../node_modules/@fortawesome/fontawesome-free/scss/fontawesome";
+// @import "../node_modules/@fortawesome/fontawesome-free/scss/solid";
+@import "./assets/scss/vars";
+@import "./assets/scss/mixins";
+@import "./assets/scss/default";
+
+@import "./components/Layout/Header/header";
+@import "./components/Nav/nav";
+@import "./components/Hero/hero";
+@import "./components/Logo/logo";
+@import "./components/Features/features";
+@import "./components/Features/Card/features-card";
+@import "./components/Story/story";
+@import "./components/Clients/clients";
+@import "./components/Clients/Client/client";
+@import "./components/Experience/experience";
+@import "./components/Experience/Skills/skills";

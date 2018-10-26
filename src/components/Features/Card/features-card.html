@@ -1,0 +1,11 @@
+{% macro card(icon, title, description) %}
+<li class="features__item">
+  <span class="features__icon">
+    <i class="{{ icon }}"></i>
+  </span>
+  <h3 class="features__title">{{ title }}</h3>
+  <p class="features__description">
+    {{ description }}
+  </p>
+</li>
+{% endmacro %}

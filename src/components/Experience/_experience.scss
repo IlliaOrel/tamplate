@@ -1,0 +1,27 @@
+$storyBackground: 'https://indianmoney.com/images/business-loan.jpg';
+
+.experience {
+  @include background(
+    rgba($color: #020202, $alpha: .3),
+    $storyBackground
+  );
+  color: #fff;
+}
+
+.experience__button {
+  margin-top: 30px;
+  margin-left: 0;
+}
+
+.container--experience {
+  @include large {
+    display: flex;
+    justify-content: flex-start;
+  }
+}
+
+.experience__description-wrap {
+  @include large {
+    width: 50%;
+  }
+}

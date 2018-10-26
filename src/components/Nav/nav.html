@@ -1,0 +1,29 @@
+{%
+  set items = [
+    { title: 'Home', href: '#' },
+    { title: 'About', href: '#' },
+    { title: 'Blog', href: '#' },
+    { title: 'Portfolio', href: '#' },
+    { title: 'Contact', href: '#' }
+  ]
+%}
+
+<nav class="nav">
+  <button class="nav__btn nav__btn--open">
+    <i class="fas fa-bars"></i>
+  </button>
+
+  <ul class="nav__list">
+    <button class="nav__btn nav__btn--close">
+      <i class="fas fa-times"></i>
+    </button>
+
+    {% for item in items %}
+      <li class="nav__item">
+        <a href="{{ item.href }}" class="nav__link">
+          {{ item.title }}
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+</nav>

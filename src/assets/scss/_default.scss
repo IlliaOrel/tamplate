@@ -1,0 +1,90 @@
+@include normalize();
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  min-height: 100vh;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  font-family: $base-font;
+  color: $secondary-text;
+}
+
+.content {
+  flex: 1 0;
+}
+
+.container {
+  width: 100%;
+  padding: 0 15px;
+
+  @include small {
+    margin: 0 auto;
+    width: 540px;
+  }
+
+  @include medium {
+    width: 720px;
+  }
+
+  @include large {
+    width: 960px;
+  }
+
+  @include extra {
+    width: 1080px;
+  }
+}
+
+h1 {
+  line-height: 1;
+  font-family: 'Cabin', sans-serif;
+  color: #fff;
+  
+  @include medium {
+    @include font-size(60);
+  }
+}
+
+h2 {
+  font-family: 'Cabin', sans-serif;
+
+  @include medium {
+    @include font-size(48);
+  }
+}
+
+.btn {
+  @include font-size(16);
+  line-height: 1;
+  background: none;
+  padding: 0;
+  text-transform: uppercase;
+  padding: 17px 20px 14px 20px;
+  border-radius: 5px;
+  border: 2px solid transparent;
+  margin: 5px;
+}
+
+.btn--primary {
+  color: #fff;
+  background: $primary;
+  border-color: $primary;
+}
+
+.section {
+  padding: 30px 0;
+  @include medium {
+    padding: 60px 0;
+  }
+  @include large {
+    padding: 120px 0;
+  }
+}

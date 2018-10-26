@@ -1,0 +1,13 @@
+{% extends 'template.html' %}
+
+{% block title %}
+  Second page
+{% endblock %}
+
+{% block content %}
+  {% include 'components/Hero/hero.html' %}
+  {% include 'components/Features/features.html' %}
+  {% include 'components/Story/story.html' %}
+  {% include 'components/Clients/clients.html' %}
+  {% include 'components/Experience/experience.html' %}
+{% endblock %}

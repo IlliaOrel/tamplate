@@ -1,0 +1,23 @@
+{%
+  set items = [
+    { icon: 'fas fa-users', title: 'Personal touch', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam volutpat purus in ferment uectetur tortor id, pharetra lorem.' },
+    { icon: 'fas fa-users', title: 'Personal touch', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam volutpat purus in ferment uectetur tortor id, pharetra lorem.' },
+    { icon: 'fas fa-users', title: 'Personal touch', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam volutpat purus in ferment uectetur tortor id, pharetra lorem.' }
+  ]
+%}
+
+{% import 'components/Features/Card/features-card.html' as features %}
+
+<section class="section features">
+  <h2 class="features__main-title">Features you’ll love</h2>
+
+  <div class="container">
+    <ul class="features__list">
+
+      {% for item in items %}
+        {{ features.card(item.icon, item.title, item.description) }}
+      {% endfor %}
+
+    </ul>
+  </div>
+</section>
